@@ -1,0 +1,14 @@
+html, body {
+    font-family: Arial, serif;
+    font-size: 18px;
+    margin: 100;
+    padding: 100;
+}
+head {
+    border-collapse: collapse;
+    background-color: peru;
+}
+.header {
+    text-align: center;
+    color: rgb(226, 104, 104);
+}
