@@ -1,1 +1,1 @@
-https://github.com/ValdemarJS/rsschool-cv/blob/gh-pages/cv.md
+https://valdemarjs.github.io/rsschool-cv/
