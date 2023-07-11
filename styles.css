@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
+
+.header {
+    padding: 30px 50px 30px 0;
+    background-color: rgb(206, 237, 214);
+  }
+.navigation {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header__navigation {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+  }
+  .navigation__link {
+    font-size: 20px;
+    transition: all .3s;
+  }
+  .navigation__item {
+    width: auto;
+    margin: auto;
+}
+  .navigation__link:hover, .navigation__link:focus {
+    color: #a7a4a4;
+  }
 body {
     color:  #0f141e;
     font-size: 16px;
@@ -56,6 +83,12 @@ a:visited {
     margin: auto;
     padding-top: 30px;
 }
+.code {
+    padding: 50px 0px 50px 0px;
+  }
+  .code__title {
+    margin-bottom: 50px;
+  }
 
 .bg-yellow {
     background: #f5f2ca;
@@ -173,6 +206,8 @@ margin-right: 0;
     opacity: 0.5;
     }
     footer {
+        /* justify-content: flex-start; */
+        display: flex;
         widows: 100px;
         height: auto;
         background-color: #acacbb;

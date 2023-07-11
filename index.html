@@ -6,14 +6,24 @@
 
         <link rel="stylesheet" href="styles.css">
     </head>
-
+<header class="header">
+    <ul class="header__navigation">
+        <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
+        <li class="navigation__item"><a href="#about-me" class="navigation__link">About me</a></li>
+        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+        <li class="navigation__item"><a href="#code" class="navigation__link">Code</a></li>
+        <li class="navigation__item"><a href="#project" class="navigation__link">My project</a></li>
+        <li class="navigation__item"><a href="#languages" class="navigation__link">Languages</a></li>
+    </ul>
+</header>
+<main>
     <body>
         <div class="container">
             <div class="info">
                 <img src="myphoto.png" alt="MY PHOTO"
                     class="avatar" />
                 <div class="info-text">
-                    <h1>Vladimir Erokhin</h1>
+                    <h1 id="about-me">Vladimir Erokhin</h1>
                     <p>Just begin to <strong> learn JS </strong></p>
                     <p> I like outdor activities, go for sport and everything
                         what related with computer</p>
@@ -31,7 +41,7 @@
                     <li>Skateboarding</li>
                 </ol>
             </div>
-            <div class="card bg-blue">
+            <div class="card bg-blue" id="skills">
                 <h2>My skills:</h2><ol class="list" type="1">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -39,7 +49,7 @@
                     <li>JavaScript (basic)</li>
                 </ol>
             </div>
-            <div class="card bg-black">
+            <div class="card bg-black" id="languages">
                 <h2>Languages:</h2><ol class="list" type="1">
                     <li>English A1</li>
                     <li>Turkish basic</li>
@@ -67,6 +77,26 @@
                     </tr>
                 </table>
             </div>
+            <section id="code" class="code">
+                <h2 class="code__title title-right">Code example</h2>
+                <pre class="code__wrapper">
+                  <code class="code__text">
+                    const rps = (p1, p2) => {
+                        if ((p1 === 'scissors' && p2 === 'paper') ||
+                           (p1 === 'rock' && p2 === 'scissors') ||
+                           (p1 === 'paper' && p2 === 'rock')){
+                      return 'Player 1 won!';
+                       } else if (p1 === p2) {
+                         return 'Draw!';
+                       } else 
+                      return 'Player 2 won!';
+                     };
+                  </code>
+                </pre>
+              </section>
+            <div class="project" id="project">
+                <a href="">GitHub</a>
+            </div>
 
             <div class="card bg-red">
                 <h2>You tube videos:</h2>
@@ -79,7 +109,7 @@
                             Some music </a></li></ul>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="contacts">
                 <h2>Contact with me</h2>
                 <form action="/">
                     <div class="row">
@@ -113,5 +143,5 @@
             </footer>
         </div>
     </body>
-
+</main>
 </html>
